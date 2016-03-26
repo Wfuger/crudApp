@@ -1,0 +1,29 @@
+<h1>This is where you edit albums BEEEOOOTCH</h1>
+<form action="/albums/edit/{{albums.id}}" method="post">
+  <fieldset>
+    <legend>Edit Album</legend>
+    <label>Artist Title</label>
+    <input type="text" name="artist" value="{{albums.artist}}">
+    <br>
+    <br>
+    <label>Album Title</label>
+    <input type="text" name="name" value="{{albums.name}}">
+    <br>
+    <br>
+    <label>Genre</label>
+    <select name="genre">
+      {{#genres}}
+        <option value="{{value}}">{{title}}</option>
+      {{/genres}}
+    </select>
+    <br>
+    <br>
+
+    <input type="checkbox" name="explicit" value=true>Contains Explicit Lyrics
+    <br>
+    <br>
+    <input type="submit" value="Edit Album">
+    <br>
+    <a href="/albums">Cancel</a>
+  </fieldset>
+</form>

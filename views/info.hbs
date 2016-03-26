@@ -1,0 +1,14 @@
+{{#albums}}
+<h1>Album Name: {{name}}</h1>
+<p>
+  Artist: {{artist}}
+</p>
+<br>
+<p>
+  Genre: {{genre}}
+</p>
+<a href="/albums/edit/{{id}}">Edit</a>
+<form action="/albums/{{id}}/delete" method="post">
+  <input type="submit" value="Delete">
+</form>
+{{/albums}}

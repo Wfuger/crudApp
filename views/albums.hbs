@@ -1,0 +1,19 @@
+<h1>Albums</h1>
+
+<a href="/albums/creator">New Album</a>
+<br><br>
+
+<table>
+  <tr>
+    <th>Artist</th>
+    <th>Album (Name)</th>
+    <th>Genre</th>
+  </tr>
+  {{#albums}}
+  <tr>
+    <td>{{artist}}</td>
+    <td><a href="/albums/{{id}}">{{name}}</a></td>
+    <td>{{genre}}</td>
+  </tr>
+  {{/albums}}
+</table>

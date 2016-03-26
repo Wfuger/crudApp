@@ -6,3 +6,12 @@ body {
 a {
   color: #00B7FF;
 }
+table {
+  border: 1px solid dodgerblue;
+}
+th {
+  border: 1px dashed red;
+}
+td {
+  border: 1px solid black;
+}
